@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBai1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdXanh = new System.Windows.Forms.RadioButton();
-            this.rdDo = new System.Windows.Forms.RadioButton();
             this.rdTrang = new System.Windows.Forms.RadioButton();
+            this.rdDo = new System.Windows.Forms.RadioButton();
+            this.rdXanh = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDonGia = new System.Windows.Forms.TextBox();
@@ -44,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblTinhTien = new System.Windows.Forms.Label();
             this.lblTTien = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -70,17 +71,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chọn màu xe";
             // 
-            // rdXanh
+            // rdTrang
             // 
-            this.rdXanh.AutoSize = true;
-            this.rdXanh.Location = new System.Drawing.Point(7, 20);
-            this.rdXanh.Name = "rdXanh";
-            this.rdXanh.Size = new System.Drawing.Size(50, 17);
-            this.rdXanh.TabIndex = 0;
-            this.rdXanh.TabStop = true;
-            this.rdXanh.Text = "Xanh";
-            this.rdXanh.UseVisualStyleBackColor = true;
-            this.rdXanh.CheckedChanged += new System.EventHandler(this.rdXanh_CheckedChanged);
+            this.rdTrang.AutoSize = true;
+            this.rdTrang.Location = new System.Drawing.Point(7, 66);
+            this.rdTrang.Name = "rdTrang";
+            this.rdTrang.Size = new System.Drawing.Size(53, 17);
+            this.rdTrang.TabIndex = 0;
+            this.rdTrang.TabStop = true;
+            this.rdTrang.Text = "Trắng";
+            this.rdTrang.UseVisualStyleBackColor = true;
+            this.rdTrang.CheckedChanged += new System.EventHandler(this.rdTrang_CheckedChanged);
             // 
             // rdDo
             // 
@@ -94,17 +95,17 @@
             this.rdDo.UseVisualStyleBackColor = true;
             this.rdDo.CheckedChanged += new System.EventHandler(this.rdDo_CheckedChanged);
             // 
-            // rdTrang
+            // rdXanh
             // 
-            this.rdTrang.AutoSize = true;
-            this.rdTrang.Location = new System.Drawing.Point(7, 66);
-            this.rdTrang.Name = "rdTrang";
-            this.rdTrang.Size = new System.Drawing.Size(53, 17);
-            this.rdTrang.TabIndex = 0;
-            this.rdTrang.TabStop = true;
-            this.rdTrang.Text = "Trắng";
-            this.rdTrang.UseVisualStyleBackColor = true;
-            this.rdTrang.CheckedChanged += new System.EventHandler(this.rdTrang_CheckedChanged);
+            this.rdXanh.AutoSize = true;
+            this.rdXanh.Location = new System.Drawing.Point(7, 20);
+            this.rdXanh.Name = "rdXanh";
+            this.rdXanh.Size = new System.Drawing.Size(50, 17);
+            this.rdXanh.TabIndex = 0;
+            this.rdXanh.TabStop = true;
+            this.rdXanh.Text = "Xanh";
+            this.rdXanh.UseVisualStyleBackColor = true;
+            this.rdXanh.CheckedChanged += new System.EventHandler(this.rdXanh_CheckedChanged);
             // 
             // label1
             // 
@@ -198,6 +199,15 @@
             this.lblTTien.Text = ".";
             this.lblTTien.Click += new System.EventHandler(this.label2_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(550, 330);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(13, 13);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "$";
+            // 
             // FormBai1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,6 +221,7 @@
             this.Controls.Add(this.lblTinhTien);
             this.Controls.Add(this.lblTTien);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -243,5 +254,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblTinhTien;
         private System.Windows.Forms.Label lblTTien;
+        private System.Windows.Forms.Label label6;
     }
 }

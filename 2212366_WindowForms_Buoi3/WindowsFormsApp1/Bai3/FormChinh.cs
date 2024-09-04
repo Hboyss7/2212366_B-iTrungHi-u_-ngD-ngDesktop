@@ -21,5 +21,29 @@ namespace Bai3
         {
 
         }
+
+        private void tsmiBai1_Click(object sender, EventArgs e)
+        {
+            var form = new FormBai1();
+            form.ShowDialog();  
+        }
+
+        private void tsmiBai2_Click(object sender, EventArgs e)
+        {
+            var form = new FormBai2();
+            form.ShowDialog();
+        }
+
+        private void tsmiBai3_Click(object sender, EventArgs e)
+        {
+            var form = new FormBai3();
+            form.ShowDialog();
+        }
+
+        private void bài4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormBai4 form = new FormBai4();
+            form.ShowDialog();
+        }
     }
 }

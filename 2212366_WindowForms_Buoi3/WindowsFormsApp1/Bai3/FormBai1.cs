@@ -33,18 +33,18 @@ namespace Bai3
         private void rdXanh_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (rdXanh.Checked)
-            {
+            
+            
                 txtDonGia.Text = "22000";
-            }
+            
         }
 
         private void rdDo_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdDo.Checked)
-            {
+            //if (rdDo.Checked)
+            
                 txtDonGia.Text = "21000";
-            }
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -59,7 +59,8 @@ namespace Bai3
 
         private void btnTinhTien_Click(object sender, EventArgs e)
         {
-            
+            int TinhTien = int.Parse(txtDonGia.Text) * int.Parse(txtSoLuong.Text);
+            lblTinhTien.Text= TinhTien.ToString();
         }
     }
 }
